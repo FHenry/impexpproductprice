@@ -1,0 +1,51 @@
+# Copyright (C) 2013	Florian HENRY 		<florian.henry@open-concept.pro>
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+#
+# Generic
+#
+
+# Module label 'ModuleXXXXName'
+Module19997Name = Import Export Product Multi Price
+# Module description 'ModuleXXXDesc'
+Module19997Desc = Import Export Product Multi Price
+
+#
+# Admin page
+#
+Setup = Setup
+Settings = Settings
+SetupPage = Setup page
+ModelNothingToSet = There is no particular setting. Go to import/Export tools screen an choose the ProductPrice.
+
+
+#
+# About page
+#
+About = About
+MyModuleAbout = About Import Export Product Multi Price
+MyModuleAboutPage =  Import Export Product Multi Price
+
+#
+# Export
+#
+ProductsMultiPrice = Product Multi Price
+PriceLevelPriceBase = Base Price (multi-price)
+PriceLevelUnitPriceHT = Unit price HT (multi-price)
+PriceLevelUnitPriceTTC = Unit price TTC (multi-price)
+PriceLevelVATRate = VAT rate (multi-price)
+MinPriceLevelUnitPriceHT = Minimum Unit price HT (multi-price)
+MinPriceLevelUnitPriceTTC = Minimum Unit price TTC (multi-price)
+ProductRowid=Product_price ID
