@@ -17,4 +17,4 @@
 --
 -- ============================================================================
 
-ALTER TABLE llx_product_price ADD COLUMN import_key varchar(14) AFTER tosell;
+ALTER TABLE llx_product_price ADD COLUMN import_key varchar(14) AFTER price_by_qty;
