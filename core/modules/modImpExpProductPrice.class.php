@@ -127,7 +127,7 @@ class modImpExpProductPrice extends DolibarrModules
 		$this->import_icon[$r]=$this->picto;
 		$this->import_entities_array[$r]=array();		// We define here only fields that use another icon that the one defined into import_icon
 		$this->import_tables_array[$r]=array('pr'=>MAIN_DB_PREFIX.'product_price');
-		$this->import_tables_creator_array[$r]=array('p'=>'fk_user_author');	// Fields to store import user id
+		$this->import_tables_creator_array[$r]=array('pr'=>'fk_user_author');	// Fields to store import user id
 		$this->import_fields_array[$r]=array('pr.fk_product'=>"ProductRowid*",
 												'pr.price_base_type'=>"PriceLevelPriceBase",'pr.price_level'=>"PriceLevel",
 												'pr.price'=>"PriceLevelUnitPriceHT",'pr.price_ttc'=>"PriceLevelUnitPriceTTC",
