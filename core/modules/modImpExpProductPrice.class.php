@@ -58,9 +58,7 @@ class modImpExpProductPrice extends DolibarrModules
 
 		$this->picto = 'impexpproductprice@impexpproductprice'; // mypicto@mymodule
 
-		$this->module_parts = array(
-			'models' => 1,
-		);
+		$this->module_parts = array();
 
 		$this->dirs = array();
 
@@ -76,7 +74,7 @@ class modImpExpProductPrice extends DolibarrModules
 
 		$this->tabs = array();
 
-		if ( ! isset($conf->modelwithrefcol->enabled)) $conf->modelwithrefcol->enabled = 0;
+		if ( ! isset($conf->impexpproductprice->enabled)) $conf->impexpproductprice->enabled = 0;
 		$this->dictionnaries = array();
 	
 
@@ -157,6 +155,8 @@ class modImpExpProductPrice extends DolibarrModules
 	function init($options = '')
 	{
 		$sql = array();
+		
+		$result = $this->load_tables();
 
 		return $this->_init($sql, $options);
 	}
@@ -174,6 +174,19 @@ class modImpExpProductPrice extends DolibarrModules
 		$sql = array();
 
 		return $this->_remove($sql, $options);
+	}
+	
+	/**
+	 * Create tables, keys and data required by module
+	 * Files llx_table1.sql, llx_table1.key.sql llx_data.sql with create table, create keys
+	 * and create data commands must be stored in directory /mymodule/sql/
+	 * This function is called by this->init
+	 *
+	 * 	@return		int		<=0 if KO, >0 if OK
+	 */
+	function load_tables()
+	{
+		return $this->_load_tables('/impexpproductprice/sql/');
 	}
 }
 
