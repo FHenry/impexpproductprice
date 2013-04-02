@@ -16,9 +16,9 @@
  */
 
 /**
- * 	\file		admin/admin_modelwithrefcol.php
- * 	\ingroup	modelwithrefcol
- * 	\brief		Setup modelwithrefcol module
+ * 	\file		admin/admin_impexpproductprice.php
+ * 	\ingroup	impexpproductprice
+ * 	\brief		Setup impexpproductprice module
  */
 
 // Dolibarr environment

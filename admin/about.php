@@ -16,8 +16,8 @@
  */
 
 /**
- * 	\file		fidelite/admin/about.php
- * 	\ingroup	fidelite
+ * 	\file		impexpproductprice/admin/about.php
+ * 	\ingroup	impexpproductprice
  * 	\brief		about page
  */
 
