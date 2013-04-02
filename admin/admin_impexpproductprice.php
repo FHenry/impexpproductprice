@@ -16,9 +16,9 @@
  */
 
 /**
- * 	\file		admin/admin_modelwithrefcol.php
- * 	\ingroup	modelwithrefcol
- * 	\brief		Setup modelwithrefcol module
+ * 	\file		admin/admin_impexpproductprice.php
+ * 	\ingroup	impexpproductprice
+ * 	\brief		Setup impexpproductprice module
  */
 
 // Dolibarr environment
@@ -54,8 +54,8 @@ $linkback = '<a href="' . DOL_URL_ROOT . '/admin/modules.php">'
 print_fiche_titre($langs->trans($page_name), $linkback);
 
 // Configuration header
-$head = modelwithrefcoladmin_prepare_head();
-dol_fiche_head($head, 'settings', $langs->trans("Module19998Name"), 0,
+$head = impexpproductpriceadmin_prepare_head();
+dol_fiche_head($head, 'settings', $langs->trans("Module19997Name"), 0,
 	"impexpproductprice@impexpproductprice");
 
 
