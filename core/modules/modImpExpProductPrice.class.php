@@ -50,7 +50,7 @@ class modImpExpProductPrice extends DolibarrModules
 
 		$this->description = "Import Export Product Multi Price";
 
-		$this->version = '1.0';
+		$this->version = '1.1';
 
 		$this->const_name = 'MAIN_MODULE_' . strtoupper($this->name);
 
