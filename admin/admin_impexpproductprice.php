@@ -29,10 +29,10 @@ if ( ! $res)
 	
 // Libraries
 require_once DOL_DOCUMENT_ROOT . "/core/lib/admin.lib.php";
-dol_include_once('/modelwithrefcol/lib/modelwithrefcol.lib.php');
+dol_include_once('/impexpproductprice/lib/impexpproductprice.lib.php');
 
 // Translations
-$langs->load("modelwithrefcol@modelwithrefcol");
+$langs->load("impexpproductprice@impexpproductprice");
 $error=0;
 
 // Access control
@@ -56,7 +56,7 @@ print_fiche_titre($langs->trans($page_name), $linkback);
 // Configuration header
 $head = modelwithrefcoladmin_prepare_head();
 dol_fiche_head($head, 'settings', $langs->trans("Module19998Name"), 0,
-	"modelwithrefcol@modelwithrefcol");
+	"impexpproductprice@impexpproductprice");
 
 
 print '<table class="noborder" width="100%">';
