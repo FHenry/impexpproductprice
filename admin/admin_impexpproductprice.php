@@ -29,7 +29,7 @@ if ( ! $res)
 	
 // Libraries
 require_once DOL_DOCUMENT_ROOT . "/core/lib/admin.lib.php";
-dol_include_once('/modelwithrefcol/lib/modelwithrefcol.lib.php');
+dol_include_once('/impexpproductprice/lib/impexpproductprice.lib.php');
 
 // Translations
 $langs->load("impexpproductprice@impexpproductprice");
@@ -54,8 +54,8 @@ $linkback = '<a href="' . DOL_URL_ROOT . '/admin/modules.php">'
 print_fiche_titre($langs->trans($page_name), $linkback);
 
 // Configuration header
-$head = modelwithrefcoladmin_prepare_head();
-dol_fiche_head($head, 'settings', $langs->trans("Module19998Name"), 0,
+$head = impexpproductpriceadmin_prepare_head();
+dol_fiche_head($head, 'settings', $langs->trans("Module19997Name"), 0,
 	"impexpproductprice@impexpproductprice");
 
 

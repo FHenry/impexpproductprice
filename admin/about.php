@@ -27,13 +27,13 @@ if (!$res) $res = @include("../../../main.inc.php"); // From "custom" directory
 
 
 // Libraries
-require '../lib/modelwithrefcol.lib.php';
+require '../lib/impexpproductprice.lib.php';
 require '../lib/PHP_Markdown/markdown.php';
 
 
 //require_once "../class/myclass.class.php";
 // Translations
-$langs->load("modelwithrefcol@modelwithrefcol");
+$langs->load("impexpproductprice@impexpproductprice");
 
 // Access control
 if (!$user->admin)
@@ -50,21 +50,21 @@ $linkback = '<a href="' . DOL_URL_ROOT . '/admin/modules.php">'	. $langs->trans(
 print_fiche_titre($page_name, $linkback);
 
 // Configuration header
-$head = modelwithrefcoladmin_prepare_head();
-dol_fiche_head($head, 'about', $langs->trans("Module19998Name"), 0, "modelwithrefcol@modelwithrefcol");
+$head = impexpproductpriceadmin_prepare_head();
+dol_fiche_head($head, 'about', $langs->trans("Module19997Name"), 0, "impexpproductprice@impexpproductprice");
 
 // About page goes here
 echo $langs->trans("AboutPage");
 
 print '<br>';
 
-$buffer = file_get_contents(dol_buildpath('/modelwithrefcol/README.md',0));
+$buffer = file_get_contents(dol_buildpath('/impexpproductprice/README.md',0));
 print Markdown($buffer);
 
 print '<br>';
 
-print '<a href="'.dol_buildpath('/modelwithrefcol/COPYING',1).'">';
-print '<img src="'.dol_buildpath('/modelwithrefcol/img/gplv3.png',1).'"/>';
+print '<a href="'.dol_buildpath('/impexpproductprice/COPYING',1).'">';
+print '<img src="'.dol_buildpath('/impexpproductprice/img/gplv3.png',1).'"/>';
 print '</a>';
 
 llxFooter();
